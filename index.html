@@ -2,37 +2,86 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="shortcut icon" href="public/images/favicon.ico">
     <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src='app.js'></script>
     <title>jjaredwatson.com</title>
   </head>
   <body>
-    <div class="page one">
-      <hr />
-      <hr />
-      <div class="container first">
-        <h1 class='vertical-rt'>ABOUT</h1>
-        <h1 class='horizontal-top text-center'>SKILLS</h1>
-        <h4>Welcome to the portfolio page of J. Jared Watson</h4>
-        <img class='center' id="icon" src="public/images/icon.png" alt="icon">
-        <h1 class='vertical-lt'>PROJECTS</h1>
-        <h1 class='horizontal-bottom text-center'>CONTACT</h1>
-      </div>
-      <hr />
-      <hr />
+
+    <hr />
+    <hr />
+
+    <div class="container proximityScrollSnapping" id="home">
+      <a href="#about" class='vertical-rt'><span>ABOUT</span></a>
+      <a href="#skills" class='horizontal-top'><span>SKILLS</span></a>
+      <del><h4>Welcome to the portfolio page of J. Jared Watson</h4></del>
+      <img href="https://giphy.com/gifs/1420RQIemNzowE" class='center' id="icon" src="public/images/icon.png" alt="icon">
+      <a href="#projects" class='vertical-lt'><span>PROJECTS</span></a>
+      <a href="#contact" class='horizontal-bottom text-center'><span>CONTACT</span></a>
     </div>
 
-    <div class="page two">
-      <hr />
-      <hr />
-      <div class="container">
-        <img id="headshot" src="public/images/headshot-poly.png" alt="headshot">
-        <h5>About</h5>
-        <h3>Freelance Web Developer</h3>
-        <p>I am a highly adaptable web developer with a creative focus and intuitive nature. I enjoy collaborating with teams to produce meaningful work in an environment that encourages continual growth. I contribute an empathetic eye and valuable customer service experience to compliment any organization.</p>
-      </div>
-      <hr />
-      <hr />
+    <hr />
+    <hr />
+
+    <div class="container proximityScrollSnapping" id="about">
+      <h3>About</h3>
+      <img id="headshot" src="public/images/headshot-poly.png" alt="headshot" />
+      <h2 id="title">Freelance Web Developer</h2>
+      <p>I am a highly adaptable web developer with a creative focus and intuitive nature. I enjoy collaborating with teams to produce meaningful work in an environment that encourages continual growth. I contribute an empathetic eye and valuable customer service experience to compliment any organization.</p>
     </div>
+
+    <hr />
+    <hr />
+
+    <div class="container proximityScrollSnapping" id="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Node.JS</li>
+        <li>Express.JS</li>
+        <li>MongoDB</li>
+        <li>Angular</li>
+        <li>React</li>
+        <li>Python</li>
+        <li>Django</li>
+      </ul>
+    </div>
+
+    <hr />
+    <hr />
+
+    <div class="container proximityScrollSnapping" id="projects">
+      <h3>Projects</h3>
+      <img id="taco-shot" src="public/images/tacomg-img.png" alt="tacOMG screenshot">
+      <h2>TacOMG</h2>
+      <p> TacOMG is a web application where a user can log in using their Facebook credentials and create their own taco, post their taco, and view their taco and other user's tacos in the gallery.</p>
+      <hr />
+      <img id="drone-shot" src="public/images/dronedb-img.png" alt="droneDB screenshot">
+      <h2>DroneDB</h2>
+      <p>A web application for people who are new to First Person View (FPV) Drone Racing. The app walks the user through the parts they will need to build a drone of their very own, with links to buy individual parts.</p>
+      <hr />
+      <img id="desk-shot" src="public/images/deskof-img.png" alt="Desk Of screenshot">
+      <h2>Desk Of</h2>
+      <p>Desk Of is an interactive social website where users can design their desks and view the desks of others, while hunting for hidden treasures and earning more junk to clutter their own desks.</p>
+    </div>
+
+    <hr />
+    <hr />
+
+    <div class="container proximityScrollSnapping" id="contact">
+      <h3>Contact</h3>
+    </div>
+
+    <hr />
+    <hr />
+
+
 
   </body>
 </html>
