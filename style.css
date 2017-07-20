@@ -138,3 +138,11 @@ p {
   width: 40%;
   height: auto;
 }
+
+a.icons {
+  font-size: 5vw;
+}
+
+a.icons:hover {
+  color: #D0FF00;
+}
