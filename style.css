@@ -2,8 +2,21 @@
     font-family: avenir;
 }
 
+body {
+  margin: 4%;
+}
+
+div {
+  margin: 4% 0% 4% 0%;
+}
+
+span {
+  margin: 0;
+}
+
 hr {
-  margin: 2%;
+  margin-top: 4%;
+  margin-bottom: 4%;
   clear: both;
 }
 
@@ -13,9 +26,6 @@ div#home{
   grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-div.container{
-  margin: 2%;
-}
 
 a {
   color: black;
@@ -97,16 +107,17 @@ h4 {
   margin: 0 auto;
 }
 
-h3 span{
+h2 span{
   background-color: #D0FF00;
 }
 
 #headshot {
-  width: 18%;
+  width: 175px;
   height: auto;
   float: right;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  margin: 0;
 }
 
 
@@ -124,25 +135,57 @@ p {
   display: block;
 }
 
-#taco-shot {
+.shot-title {
+  text-decoration: none;
+}
+
+.shot-title:hover {
+  color: #D0FF00;
+  text-decoration: none;
+}
+
+.screen-shot {
  width: 40%;
  height: auto;
+ margin-bottom: 6%;
+}
+
+#taco-shot {
+  float: left;
+  margin-right: 2%;
 }
 
 #drone-shot {
-  width: 40%;
-  height: auto;
+  float: right;
+  margin: 2% 0% 6% 2%;
 }
 
 #desk-shot {
-  width: 40%;
-  height: auto;
+  float: left;
+  margin-right: 2%;
+}
+
+#drone-pg {
+  margin-bottom: 6%;
 }
 
 a.icons {
-  font-size: 5vw;
+  font-size: 30px;
+  text-decoration: none;
 }
 
 a.icons:hover {
   color: #D0FF00;
+  text-decoration: none;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.hr {
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
