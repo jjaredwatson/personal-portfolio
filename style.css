@@ -1,96 +1,69 @@
 * {
     font-family: avenir;
+    margin: auto;
 }
 
-body {
-  margin: 4%;
+section {
+  padding: 4%;
 }
 
-div {
-  margin: 4% 0% 4% 0%;
-}
-
-span {
-  margin: 0;
+#home {
+  padding: 0;
 }
 
 hr {
-  margin-top: 4%;
-  margin-bottom: 4%;
-  clear: both;
+  border-color: black;
+  margin-top: 0;
+  margin-bottom: 3%;
 }
-
-div#home{
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
-}
-
 
 a {
   color: black;
+  text-decoration: none;
 }
 
-a.horizontal-top {
-  grid-column: 3;
-  grid-row: 1;
+a:hover {
+  text-decoration: none;
+}
+
+a.link:hover {
+  background-color: #D0ff00;
+}
+
+img {
+  align-content: center;
+  width: 85%;
+}
+
+h1 {
+  font-size: 7vw;
   text-align: center;
-  font-size: 5vw;
-  text-decoration: none;
-  margin: 10%;
-  padding-left: 10px;
-  padding-right: 10px;
-
-}
-
-a.vertical-rt {
-  transform: rotate(90deg);
-	transform-origin: left top 0;
-  grid-row-start: 3;
-  grid-column-start: 6;
-  font-size: 5vw;
-  text-decoration: none;
-}
-
-a.horizontal-bottom {
-  grid-column-start: 3;
-  grid-row-start: 5;
-  text-align: center;
-  font-size: 5vw;
-  text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
-
-}
-
-a.vertical-lt {
-  transform: rotate(270deg);
-	transform-origin: left top 0;
-  grid-row: 5;
-  grid-column-start: 1;
-  font-size: 5vw;
-  text-decoration: none;
-}
-
-a:visited {
   color: black;
 }
 
-a:hover span{
-  background-color: #D0FF00;
+#about {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  text-align: left;
+  top: 12vw;
 }
 
-del {
-  grid-column: 3;
-  grid-row: 4;
-  text-align: center;
-  margin: 30px 0px 30px 0px;
-  color: #D0FF00;
-  font-size: 20px;
+#projects {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  text-align: left;
+  top: 15vw;
 }
 
-h4 {
-  font-family: 'Roboto Slab', serif;
+#welcome {
+  font-size: 2vw;
+  margin: 4%;
+  font-family: Avenir;
+}
+
+a:visited {
   color: black;
 }
 
@@ -107,22 +80,46 @@ h4 {
   margin: 0 auto;
 }
 
-h2 span{
+h2 {
+  margin-bottom: 4%;
+
+}
+
+.breadcrumb {
+  font-family: Avenir;
+  font-size: 30px;
+  background-color: inherit;
+}
+
+#project-section {
   background-color: #D0FF00;
+  color: black;
+}
+
+#project-contain {
+  padding-bottom: 4%;
+}
+
+h3 {
+  margin: 0;
+  text-decoration: none;
+}
+
+h3:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#about-section {
+  background-color: black;
+  color: white;
 }
 
 #headshot {
-  width: 175px;
+  width: 35%;
   height: auto;
-  float: right;
-  padding-left: 4vw;
-  padding-right: 4vw;
-  margin: 0;
-}
-
-
-li {
-  margin: 2%;
+  float: left;
+  vertical-align: middle;
 }
 
 #experience img {
@@ -132,8 +129,32 @@ li {
 
 p {
   font-family: 'Roboto Slab', serif;
-  display: block;
+  font-size: 18px;
 }
+
+div.container {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.description {
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 15px 15px black;
+  padding: 4%;
+  width: 60vw;
+  height: auto;
+  text-align: left;
+  text-decoration: none;
+  margin: 0;
+}
+
+.description:hover {
+  background-color: #B4B4B4;
+  text-decoration: none;
+  color: black;
+}
+
 
 .shot-title {
   text-decoration: none;
@@ -145,9 +166,10 @@ p {
 }
 
 .screen-shot {
- width: 40%;
+ width: 60%;
  height: auto;
  margin-bottom: 6%;
+ border: 2px solid black;
 }
 
 #taco-shot {
@@ -170,22 +192,53 @@ p {
 }
 
 a.icons {
-  font-size: 30px;
+  font-size: 5vw;
   text-decoration: none;
 }
 
 a.icons:hover {
-  color: #D0FF00;
-  text-decoration: none;
+  color: #d0ff00;
+  text-shadow: 2px 2px black;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  font-size: 10vw;
+  margin: 4%;
+  color: #d0ff00;
+  text-shadow: 3px 3px black;
+}
+
+#white-hr {
+  border-color: white;
+}
+
+.description-inverse {
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 12px 12px #D0FF00;
+  padding: 4%;
+  width: 70%;
+  height: auto;
+  margin: 2%;
+  color: black;
+  text-align: left;
+}
+
+#about-contain {
+  padding-bottom: 4%;
+}
+
+#contact {
+  padding-bottom: 4%;
 }
 
 .contact-info {
   text-align: center;
   margin-top: 15vh;
   margin-bottom: 15vh;
-}
-
-.hr {
-  margin-top: 4%;
-  margin-bottom: 4%;
 }
