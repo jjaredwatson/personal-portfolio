@@ -191,6 +191,10 @@ div.container {
   margin-bottom: 6%;
 }
 
+#project-stretch {
+  border-color: #D0FF00;
+}
+
 a.icons {
   font-size: 5vw;
   text-decoration: none;
