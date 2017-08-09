@@ -24,6 +24,10 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+a.link:hover {
+  text-decoration: none;
   text-shadow: 5px 5px #D0FF00;
 
 }
