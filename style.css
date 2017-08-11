@@ -199,6 +199,7 @@ div.container {
   /*box-shadow: 15px 15px #D0FF00;*/
   margin-bottom: 8%;
   z-index: 2;
+  position: relative;
 }
 
 /*.description {
